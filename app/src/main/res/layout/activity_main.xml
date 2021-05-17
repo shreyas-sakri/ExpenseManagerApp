@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Log In"
+                android:text="@string/log_in"
                 android:textColor="@android:color/white"
                 android:textAppearance="?android:textAppearanceLarge">
             </TextView>
@@ -63,17 +63,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="@android:color/white"
                 android:padding="5dp"
-                android:text="Forget Password?" />
+                android:text="@string/forget_password"
+                android:textColor="@android:color/white" />
             <TextView
                 android:id="@+id/signup_reg"
+                android:onClick="signuphere"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="5dp"
                 android:textColor="@android:color/white"
-                android:text="Dont Have a Account? Sign Up Here!!" />
+                android:text="@string/dont_have_a_account_sign_up_here" />
 
         </LinearLayout>
 

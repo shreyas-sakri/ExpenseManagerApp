@@ -60,7 +60,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 }
 
                 mDialog.setMessage("Processing...");
-
+                mDialog.show();
                 mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
