@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mForgetPassword;
 
     private ProgressDialog mDialog;
-    //private TextView mSignupHere;
+   // private TextView mSignupHere;
 
     //Firebase...
     private FirebaseAuth mAuth;
@@ -79,12 +79,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //Registration Activity
-     /*   mSignupHere.setOnClickListener(new View.OnClickListener() {
+      /* mSignupHere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),RegistrationActivity.class));
             }
-        }); */
+        });*/
         //Reset Password Activity
         mForgetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
