@@ -3,4 +3,6 @@
     <string name="forget_password">Forget Password?</string>
     <string name="dont_have_a_account_sign_up_here">Dont Have a Account? Sign Up Here!!</string>
     <string name="log_in">Log In</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
 </resources>
