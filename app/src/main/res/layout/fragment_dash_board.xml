@@ -159,19 +159,6 @@
 
             </TextView>
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/income_Ft_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:elevation="6dp"
-                android:src="@drawable/income"
-                android:visibility="invisible"
-                app:backgroundTint="#1ce10a"
-                app:fabSize="mini"
-                app:pressedTranslationZ="12dp">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
         </LinearLayout>
 
 
@@ -197,6 +184,20 @@
             android:src="@drawable/expense"
             android:visibility="invisible"
             app:backgroundTint="#07bca4"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/income_Ft_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:elevation="6dp"
+            android:src="@drawable/income"
+            android:visibility="invisible"
+            app:backgroundTint="#1ce10a"
             app:fabSize="mini"
             app:pressedTranslationZ="12dp">
 
