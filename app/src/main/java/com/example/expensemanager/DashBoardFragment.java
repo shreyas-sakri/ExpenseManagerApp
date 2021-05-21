@@ -124,4 +124,21 @@ public class DashBoardFragment extends Fragment {
 
         return  myview;
     }
+    private void addData(){
+        //Fab Button income
+        fab_income_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        fab_expense_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+    }
 }
