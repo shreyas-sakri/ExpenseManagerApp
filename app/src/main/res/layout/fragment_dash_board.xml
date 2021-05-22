@@ -178,27 +178,31 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/expense_Ft_btn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_gravity="bottom|end"
             android:elevation="6dp"
             android:src="@drawable/expense"
             android:visibility="invisible"
             app:backgroundTint="#07bca4"
             app:fabSize="mini"
+            app:layout_anchor="@+id/expense_Ft_btn"
+            app:layout_anchorGravity="top|center"
             app:pressedTranslationZ="12dp">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/income_Ft_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:layout_gravity="bottom"
             android:elevation="6dp"
             android:src="@drawable/income"
             android:visibility="invisible"
             app:backgroundTint="#1ce10a"
-            app:fabSize="mini"
+            app:backgroundTintMode="screen"
+            app:fabSize="normal"
+            app:layout_insetEdge="top"
             app:pressedTranslationZ="12dp">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
