@@ -19,43 +19,41 @@ public class Data {
         return amount;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public String getNote() {
-        return note;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getData() {
-        return data;
-    }
-
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setType(String type) {
         this.type = type;
     }
 
+    public String getNote() {
+        return note;
+    }
+
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public void setId(String id) {
         this.id = id;
     }
 
+    public String getData() {
+        return data;
+    }
+
     public void setData(String data) {
         this.data = data;
     }
-
-
 
     public Data(){
 

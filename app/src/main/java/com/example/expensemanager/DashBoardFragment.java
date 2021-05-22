@@ -14,12 +14,17 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.expensemanager.Model.Data;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -81,14 +86,16 @@ public class DashBoardFragment extends Fragment {
 
     private boolean isOpen=false;
 
+
+
+    //Animation
+    private Animation FadeOpen,FadeClose;
+
     //Firebase....
 
     private FirebaseAuth mAuth;
     private DatabaseReference mIncomeDatabase;
     private DatabaseReference mExpenseDatabase;
-
-    //Animation
-    private Animation FadeOpen,FadeClose;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -99,6 +106,8 @@ public class DashBoardFragment extends Fragment {
         mAuth=FirebaseAuth.getInstance();
         FirebaseUser mUser=mAuth.getCurrentUser();
         String uid=mUser.getUid();
+
+
         mIncomeDatabase= FirebaseDatabase.getInstance().getReference().child("IncomeData").child(uid);
         mExpenseDatabase=FirebaseDatabase.getInstance().getReference().child("ExpenseData").child(uid);
         //connect float button to layout
@@ -172,9 +181,8 @@ public class DashBoardFragment extends Fragment {
         EditText edtAmount=myview.findViewById(R.id.amount_edit);
         EditText edtType=myview.findViewById(R.id.type_edt);
         EditText edtNote=myview.findViewById(R.id.note_edt);
-
-        Button btnSave=myview.findViewById(R.id.btn_save);
-        Button btnCancel=myview.findViewById(R.id.btn_cancel);
+        Button btnSave=myview.findViewById(R.id.btnSave);
+        Button btnCancel=myview.findViewById(R.id.btnCancel);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -198,6 +206,14 @@ public class DashBoardFragment extends Fragment {
                     return;
                 }
 
+                int ouramountint=Integer.parseInt(amount);
+
+                String id=mIncomeDatabase.push().getKey();
+                String mDate= DateFormat.getDateInstance().format(new Date());
+                Data data=new Data(ouramountint,type,note,id,mDate);
+                mIncomeDatabase.child(id).setValue(data);
+                Toast.makeText(getActivity(),"DataADDED",Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
 
 
             }

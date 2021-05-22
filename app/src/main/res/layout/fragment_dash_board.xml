@@ -201,7 +201,7 @@
             android:visibility="invisible"
             app:backgroundTint="#1ce10a"
             app:backgroundTintMode="screen"
-            app:fabSize="normal"
+            app:fabSize="mini"
             app:layout_insetEdge="top"
             app:pressedTranslationZ="12dp">
 
