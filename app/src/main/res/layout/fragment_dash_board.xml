@@ -171,7 +171,8 @@
             android:layout_marginBottom="16dp"
             android:src="@drawable/income"
             app:backgroundTint="#6A1B9A"
-            app:fabSize="normal">
+            app:fabSize="normal"
+            android:contentDescription="TODO">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
