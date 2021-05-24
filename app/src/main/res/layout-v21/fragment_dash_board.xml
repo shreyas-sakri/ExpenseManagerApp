@@ -179,15 +179,17 @@
             android:id="@+id/expense_Ft_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="150dp"
+            android:layout_marginRight="85dp"
             android:elevation="6dp"
             android:src="@drawable/expense"
             android:visibility="invisible"
             app:backgroundTint="#07bca4"
-            app:fabSize="mini"
-            app:layout_anchor="@+id/expense_Ft_btn"
+            app:fabSize="normal"
             app:layout_anchorGravity="top|center"
-            app:pressedTranslationZ="12dp">
+            app:pressedTranslationZ="12dp"
+            tools:ignore="OnClick">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
@@ -195,7 +197,9 @@
             android:id="@+id/income_Ft_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="85dp"
+            android:layout_marginBottom="80dp"
             android:elevation="6dp"
             android:src="@drawable/income"
             android:visibility="invisible"
