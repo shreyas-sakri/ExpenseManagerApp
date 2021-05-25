@@ -28,7 +28,8 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:context=".DashBoardFragment">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -45,7 +46,8 @@
                     android:layout_width="1dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:context=".DashBoardFragment">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:context=".DashBoardFragment">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -87,7 +90,8 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    tools:context=".DashBoardFragment">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -180,8 +184,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|bottom"
-            android:layout_marginBottom="150dp"
             android:layout_marginRight="85dp"
+            android:layout_marginBottom="150dp"
+            android:clickable="true"
             android:elevation="6dp"
             android:src="@drawable/expense"
             android:visibility="invisible"
@@ -200,6 +205,7 @@
             android:layout_gravity="right|bottom"
             android:layout_marginRight="85dp"
             android:layout_marginBottom="80dp"
+            android:clickable="true"
             android:elevation="6dp"
             android:src="@drawable/income"
             android:visibility="invisible"
